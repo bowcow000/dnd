@@ -75,7 +75,7 @@ WHERE products_count > 3
 Данные нужно отсортировать в порядке убывания цены.
 Отмененные заказы не учитывайте.
 
-###**РЕШЕНИЕ:**
+### **РЕШЕНИЕ:**
 
 ```
 SELECT * FROM orders
@@ -88,7 +88,7 @@ LIMIT 3
 
 ![image](https://github.com/user-attachments/assets/d567e26a-a341-4f7d-bce7-c4936188e6c8)
 
-###**СКРИНШОТ:**
+### **СКРИНШОТ:**
 
 ![image](https://github.com/user-attachments/assets/d3a74684-86fb-4c48-b403-7f647988ba6c)
 
