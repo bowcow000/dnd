@@ -222,9 +222,108 @@ INSERT INTO users (id, first_name, last_name) VALUES
 
 
 
+# **15.03.25**
+
+## **#1 ЗАДАНИЕ:**
+
+Создайте таблицу users для хранения информации о пользователях сайта.
+В таблице должны быть следующие поля:
+
+id – идентификатор, целое положительное;
+email – адрес электронной почты, строка не более 100 символов;
+date_joined – дата регистрации (достаточно хранить дату, без времени)
+last_activity – дата и время последней активности (с точностью до секунд).
+
+### **РЕШЕНИЕ:**
+
+```
+DROP TABLE IF EXISTS users;
+
+CREATE TABLE users (
+    id INT,
+    email VARCHAR(100) NOT NULL,
+	 date_joined DATE NOT NULL,
+	 last_activity DATETIME NOT NULL
+);
+
+INSERT INTO users (id, email, date_joined, last_activity) VALUES
+(1, "user1@domain.com", "2014-12-12", "2016-04-08 12:34:54"),
+(2, "user2@domain.com", "2014-12-12", "2017-02-13 11:46:53"),
+(3, "user3@domain.com", "2014-12-13", "2017-04-04 05:12:07");
+```
+
+### **СКРИНШОТ:**
+
+![image](https://github.com/user-attachments/assets/2f07fb55-5dd2-4a06-8643-e0ea762a051f)
+
+![image](https://github.com/user-attachments/assets/6c1a1f5c-8d2f-4968-b64a-960ea8548ba8)
+
+## **#2 ЗАДАНИЕ:**
+
+Создайте таблицу calendar для хранения календаря посетителей.
+В таблице должны быть следующие поля:
+
+id – идентификатор записи в календаре, целое положительное;
+user_id – идентификатор пользователя, целое положительное;
+doctor_id – идентификатор доктора, целое положительное;
+visit_date – дата и время визита (точность до секунд).
+
+### **РЕШЕНИЕ:**
+
+```
+DROP TABLE IF EXISTS calendar;
+
+Create table calendar (
+id INT UNSIGNED,
+user_id INT UNSIGNED NOT NULL,
+doctor_id INT UNSIGNED NOT NULL,
+visit_date DATETIME NOT NULL);
+
+INSERT INTO calendar (id, user_id, doctor_id, visit_date) VALUES
+(1, 1914 , 1, '2017-04-08 12:00:00'),
+(2, 12, 1, '2017-04-08 12:30:00'),
+(3, 4641, 2, '2017-04-09 09:00:00'),
+(4, 784, 1,'2017-04-09 09:00:00'),
+(5, 15, 2,'2017-04-09 10:00:00');
+```
+
+### **СКРИНШОТ:**
+
+![image](https://github.com/user-attachments/assets/47bf6611-9218-4d12-b683-a10ab7ecf29e)
+
+![image](https://github.com/user-attachments/assets/4f16ec96-c4cd-4909-832d-22725c1794b9)
 
 
+## **#3 ЗАДАНИЕ:**
 
+Создайте таблицу users , в которой будут следующие поля:
 
+id — идентификатор, целые положительные числа.
+first_name— имя, строки до 50 символов.
+last_name — фамилия, строки до 60 символов.
+bio — биография, текст до 65000 символов.
 
+### **РЕШЕНИЕ:**
+
+```
+DROP TABLE IF EXISTS users;
+
+create table users (
+	id INT(10) UNSIGNED,
+	first_name VARCHAR(50) NOT NULL,
+	last_name VARCHAR(60) NOT NULL,
+	bio TEXT
+);
+
+INSERT INTO users (id, first_name, last_name, bio) VALUES
+(1,'Антон','Кулик','С отличием окончил 39 лицей.'),
+(2,'Сергей','Давыдов',''),
+(3,'Дмитрий','Соколов','Профессиональный программист.');
+```
+
+### **СКРИНШОТ:**
+
+![image](https://github.com/user-attachments/assets/3c3cfd4e-b6fe-4d19-9652-22c04f788ea7)
+
+![image](https://github.com/user-attachments/assets/d3ea0c32-4f69-4eb6-b776-4c1fd4ad6263)
 
