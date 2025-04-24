@@ -327,3 +327,14 @@ INSERT INTO users (id, first_name, last_name, bio) VALUES
 
 ![image](https://github.com/user-attachments/assets/d3ea0c32-4f69-4eb6-b776-4c1fd4ad6263)
 
+
+
+
+
+# **29.03.25**
+
+# **05.04.25**
+
+# **12.04.25**
+
+# **22.04.25**
